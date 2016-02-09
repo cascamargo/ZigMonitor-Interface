@@ -1,6 +1,6 @@
 from django.db import models
-from geoposition import Geoposition
-from geoposition.fields import GeopositionField
+#from geoposition import Geoposition
+#from geoposition.fields import GeopositionField
 
 class PointOfInterest(models.Model):
     name = models.CharField(max_length=100)
