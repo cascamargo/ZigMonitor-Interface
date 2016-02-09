@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     #'simple_chart.apps.SimpleChartConfig',
-    'geoposition',
+    
     'gmaps.apps.GmapsConfig',
     'lm.apps.LmConfig',
     'graph.apps.GraphConfig',
@@ -132,4 +132,8 @@ GEOPOSITION_MARKER_OPTIONS = {
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
+#script_dir = os.path.dirname(__file__)
+#file_path = os.path.join(script_dir,'../static/')
+
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')

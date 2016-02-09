@@ -85,9 +85,10 @@ var map;
 
 function setMarker(map) {
 
-    $.getJSON('http://localhost:8000/gmaps/api/postes', function(userPos) {
+    $.getJSON('http://camargod2.pythonanywhere.com/gmaps/api/postes', function(userPos) {
        var infowindow = new google.maps.InfoWindow(), marker, i;
        //window.alert(userPos["pontos"].length);
+        window.alert(userPos["pontos"].length);
       for (var i = 0, length = userPos["pontos"].length; i <  length; i++) {
         //var data = json[i];
         //window.alert(userPos["postes"].length);
@@ -142,7 +143,7 @@ function setMarker(map) {
 
 function setLinks(map) {
 
-    $.getJSON('http://localhost:8000/gmaps/api/postes', function(userPos) {
+    $.getJSON('http://camargod2.pythonanywhere.com/gmaps/api/postes', function(userPos) {
        /*var infowindow = new google.maps.InfoWindow(), marker, i;
        window.alert(userPos["pontos"].length);*/
       for (var i = 0, length = userPos["links"].length; i <  length; i++) {
