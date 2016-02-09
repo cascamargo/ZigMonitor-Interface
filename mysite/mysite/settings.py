@@ -133,3 +133,4 @@ GEOPOSITION_MARKER_OPTIONS = {
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
