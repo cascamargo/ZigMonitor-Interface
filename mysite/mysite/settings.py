@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     #'simple_chart.apps.SimpleChartConfig',
-    'geoposition',
+    
     'gmaps.apps.GmapsConfig',
     'lm.apps.LmConfig',
     'graph.apps.GraphConfig',
