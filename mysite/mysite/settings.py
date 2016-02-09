@@ -136,4 +136,4 @@ GEOPOSITION_MARKER_OPTIONS = {
 #file_path = os.path.join(script_dir,'../static/')
 
 STATIC_URL = '/static/'
-#STATIC_ROOT = file_path
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
