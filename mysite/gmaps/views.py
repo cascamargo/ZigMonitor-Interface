@@ -29,8 +29,8 @@ def ajax(request):
     #data2 = json.dumps(json_data)
         #f.close()
     #json_data.close()
-    return HttpResponse(simplejson.dumps(data1), content_type='application/json')
-    #return JsonResponse(data1,safe=False)
+    #return HttpResponse(simplejson.dumps(data1), content_type='application/json')
+    return JsonResponse(data1,safe=False)
 #def showgmapsDetail(request, zone_id):
  #   zone=PointOfInterest.objects.get(id=zone_id)
  #   return render_to_response('zonendetail.html', {"zone": zone})
